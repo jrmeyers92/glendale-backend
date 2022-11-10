@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_repeatable_games",
+  "info": {
+    "displayName": "Game",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dateAndTime": {
+      "type": "datetime"
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "Home",
+        "Away"
+      ]
+    },
+    "ourScore": {
+      "type": "integer"
+    },
+    "opponentScore": {
+      "type": "integer"
+    },
+    "gameRecap": {
+      "type": "text"
+    },
+    "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "opponent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::opponent.opponent"
+    }
+  }
+}

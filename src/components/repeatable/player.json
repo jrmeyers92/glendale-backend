@@ -1,0 +1,67 @@
+{
+  "collectionName": "components_repeatable_players",
+  "info": {
+    "displayName": "player",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "enumeration",
+      "enum": [
+        "freshman",
+        "sophomore",
+        "junior",
+        "senior"
+      ]
+    },
+    "jv": {
+      "type": "boolean"
+    },
+    "varsity": {
+      "type": "boolean"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "goalie",
+        "defense",
+        "midfield",
+        "forward"
+      ]
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "secondaryPosition": {
+      "type": "enumeration",
+      "enum": [
+        "goalie",
+        "defense",
+        "midfield",
+        "forward"
+      ]
+    }
+  }
+}

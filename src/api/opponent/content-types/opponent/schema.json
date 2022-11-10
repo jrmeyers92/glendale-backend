@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "opponents",
+  "info": {
+    "singularName": "opponent",
+    "pluralName": "opponents",
+    "displayName": "opponent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "school_name": {
+      "type": "string"
+    },
+    "mascot": {
+      "type": "string"
+    },
+    "directions": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

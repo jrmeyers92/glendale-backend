@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rosters",
+  "info": {
+    "singularName": "roster",
+    "pluralName": "rosters",
+    "displayName": "roster"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "boys",
+        "girls"
+      ]
+    },
+    "team": {
+      "type": "enumeration",
+      "enum": [
+        "jv",
+        "varsity"
+      ]
+    },
+    "player": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repeatable.player"
+    }
+  }
+}

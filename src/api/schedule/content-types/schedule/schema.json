@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules",
+  "info": {
+    "singularName": "schedule",
+    "pluralName": "schedules",
+    "displayName": "schedule",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Boys",
+        "Girls"
+      ]
+    },
+    "team": {
+      "type": "enumeration",
+      "enum": [
+        "JV",
+        "Varsity"
+      ]
+    },
+    "year": {
+      "type": "integer",
+      "required": true,
+      "min": 1980,
+      "max": 2999
+    },
+    "game": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repeatable.game"
+    }
+  }
+}
