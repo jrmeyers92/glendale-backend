@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "dateAndTime": {
-      "type": "datetime"
-    },
     "location": {
       "type": "enumeration",
       "enum": [
@@ -40,6 +37,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::opponent.opponent"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
     }
   }
 }
